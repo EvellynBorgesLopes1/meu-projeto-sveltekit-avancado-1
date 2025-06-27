@@ -5,8 +5,8 @@
 <form method="POST">
  <input name="nome" type="text" placeholder="Nome de usuário" value={form?.nome || ''} required />
  <input name="email" type="email" placeholder="E-mail de usuário" value={form?.email || ''} required />
- <input name="senha" type="password" placeholder="Senha" value={form?.senha || ''} required />
- <input name="confimacaosenha" type="password" placeholder="Confimação de senha" value={form?.confimacaosenha || ''} required />
+ <input name="senha" type="password" placeholder="Senha" value={form?.confirmacaosenha || ''} required />
+ <input name="confirmacaosenha" type="password" placeholder="Confimação de senha" value={form?.confirmacaosenha || ''} required />
  <input name="nascimento" type="date" value={form?.nascimento || ''} required />
  <button>Cadastrar</button>
 </form>

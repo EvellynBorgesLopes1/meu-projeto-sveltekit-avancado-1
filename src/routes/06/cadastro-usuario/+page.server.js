@@ -19,7 +19,7 @@ export const actions = {
         if (!dados.nome || !dados.email || !dados.nascimento || !dados.senha || !dados.confirmacaosenha) dados.erros.push ('preencha todos os campos.') ;
         if (!dados.email.includes ('@')) dados.erros.push('email inválido.') ;
         if (dados.senha != dados.confirmacaosenha) dados.erros.push ('senhas não conferem.') ;
-        if (!contem(dados.senha,"abcdefghijklmnopqrstuvwxyz")
+        if (!contem (dados.senha,"abcdefghijklmnopqrstuvwxyz")
             || !contem (dados.senha, "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
             || !contem (dados.senha, "0123456789")
             || !contem (dados.senha, "!@#$%¨&*()-_=+")
